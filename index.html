@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Staatliches&family=Yellowtail&display=swap" rel="stylesheet">
+    <title>weather app</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+   <script src="weather.js"></script>
+</head>
+
+<body>
+
+    <nav>
+        <h2>Weather App</h2>
+    </nav>
+
+    <div class="input">
+        <form onsubmit="getWeatherData() ; return false">
+            <input type="text" id="city" placeholder="Enter Your City">
+            <button type="submit">submit</button>
+        </form>
+    </div>
+
+
+    <div class="center">
+        <div class="img"><img src="" alt="" id="icon"></div>
+        <div class="temp" id="temp"></div>
+    </div>
+    <div class="divide">
+        <div class="left">
+            <div>
+                <div id="loc"></div>
+                <div id="feellike"></div>
+                <div id="Precipitation"></div>
+            </div>
+        </div>
+        <div class="right">
+            <div id="humidity"></div>
+            <div id="wind"></div>
+            <div id="visiblity"></div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
